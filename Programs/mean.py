@@ -1,9 +1,10 @@
 def mean ():
-    n = input("Enter Number to calculate sum")
-    n = int (n)
-    average = 0
+    data= []
+    n = int(input("Enter total number of numbers"))
+    for i in range(n):
+        data.append(int(input("enter the numbers")))
     sum = 0
-    for num in range(0,n+1,1):
+    for num in data:
         sum = sum+num
     print("SUM of first ", n, "numbers is: ", sum )
     mean = sum/n
